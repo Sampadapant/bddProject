@@ -1,0 +1,197 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-16T23:00:42.372Z",
+        "line": 3,
+        "name": "login with valid credentials",
+        "description": "",
+        "id": "login;login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7880808000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am in sauce lab login page",
+            "match": {
+              "location": "stepDefinitions.loginSteps.i_am_in_sauce_lab_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1036507000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter valid username",
+            "match": {
+              "location": "stepDefinitions.loginSteps.i_enter_valid_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 293287000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enetr valid password",
+            "match": {
+              "location": "stepDefinitions.loginSteps.i_enetr_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2514796000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on login button",
+            "match": {
+              "location": "stepDefinitions.loginSteps.i_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28981000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I will go on homepage",
+            "match": {
+              "location": "stepDefinitions.loginSteps.i_will_go_on_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-16T23:00:54.268Z",
+        "line": 11,
+        "name": "Login",
+        "description": "",
+        "id": "login-with-multiple-user;login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user navigates to sauce lab",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I enter Username as \"standard_user\" and Password as \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 21
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 53
+                }
+              ],
+              "location": "stepDefinitions.multipleUsersSteps.i_enter_Username_as_and_Password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "login should be successful",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-16T23:00:54.295Z",
+        "line": 12,
+        "name": "Login",
+        "description": "",
+        "id": "login-with-multiple-user;login;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user navigates to sauce lab",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I enter Username as \"locked_out_user\" and Password as \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "locked_out_user",
+                  "offset": 21
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinitions.multipleUsersSteps.i_enter_Username_as_and_Password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "login should be successful",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login with multiple user",
+    "description": "  I want to verify login with multiple users",
+    "id": "login-with-multiple-user",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/multipleUsers.feature",
+    "tags": []
+  }
+]
